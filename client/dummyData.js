@@ -28,3 +28,13 @@ const samplePlayerData = {
   name: 'Squishy Muffins',
   years_pro: '7'
 };
+
+const currentGameId = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+
+export {
+  sampleGameData,
+  sampleLeagueData,
+  sampleTeamData,
+  samplePlayerData,
+  currentGameId
+};
