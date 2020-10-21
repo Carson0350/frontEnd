@@ -20,8 +20,7 @@ const leagueSchema = new Schema({
   id: Schema.Types.ObjectId,
   name: String,
   logo: String,
-  game_id: Number,
-  game: { type: Schema.Types.ObjectId, ref: 'Game' },
+  game_id: { type: Schema.Types.ObjectId, ref: 'Game' },
 });
 
 const teamSchema = new Schema({
@@ -29,16 +28,15 @@ const teamSchema = new Schema({
   name: String,
   logo: String,
   sponsored: Boolean,
-  league_id: Number,
-  game_id: Number,
-  league: { type: Schema.Types.ObjectId, ref: 'League' },
+  game_id: { type: Schema.Types.ObjectId, ref: 'Game' },
+  league_id: { type: Schema.Types.ObjectId, ref: 'League' },
 });
 
 const playerSchema = new Schema ({
   id: Schema.Types.ObjectId,
   name: String,
   years_pro: Number,
-  team: { type: Schema.Types.ObjectId, ref: 'Team' },
+  team_id: { type: Schema.Types.ObjectId, ref: 'Team' },
 });
 
 const scoreSchema = new Schema ({
