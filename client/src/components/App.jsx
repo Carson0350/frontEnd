@@ -1,26 +1,35 @@
 import React from 'react';
+import axios from 'axios';
 
-import gameInfo from './gameNav.jsx'
+// import sampleGameData from '../../dummyData.jsx';
+import gameInfo from './gameInfo.jsx';
+// console.log(sampleGameData)
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props)
     this.state = {
       gameData: {},
     };
   }
 
-  componentDidMount () {
-    console.log('mounted')
+  componentDidMount() {
+    console.log('App componented mounted')
   };
+
 
   render () {
     return (
       <div>
-        <div>hello from app.jsx</div>
-        <gameInfo />
+        <div className='main-nav'>
+          <div className='buttons'>
+            <div>Rocket League</div>
+            <div>OverWatch</div>
+            <div>League of Legands</div>
+            <div>Counter Strike Global Defense </div>
+          </div>
       </div>
+    </div>
     )
   };
 }
