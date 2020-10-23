@@ -1,20 +1,21 @@
 import React from 'react';
 
-import GameSection from './GameSection.jsx';
+// import sampleGameData from '../../dummyData.jsx';
+import GameInfo from './GameInfo.jsx';
+// console.log(sampleGameData)
 
-
-const App = () => (
-  <div>
+const GameSection = () => {
+  <div className='game-section-wrapper'>
     <div className='main-nav'>
       <div className='buttons'>
-        <GameSection />
         <div>Rocket League</div>
         <div>OverWatch</div>
         <div>League of Legands</div>
         <div>Counter Strike Global Defense </div>
+        <div><GameInfo /></div>
       </div>
     </div>
   </div>
-);
+};
 
-export default App;
+export default GameSection;
