@@ -30,6 +30,7 @@ const teamSchema = new Schema({
   sponsored: Boolean,
   game_id: { type: Schema.Types.ObjectId, ref: 'Game' },
   league_id: { type: Schema.Types.ObjectId, ref: 'League' },
+  location: String,
 });
 
 const playerSchema = new Schema ({
