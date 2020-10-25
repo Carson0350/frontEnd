@@ -38,3 +38,42 @@ db.Game.deleteMany({}, (err) => {
     createGameData();
   }
 });
+
+const leagues = [];
+
+const createLeagueData = () => {
+  const gameId = 1
+
+  const league = new db.League({
+    _id: new mongoose.Types.ObjectId(),
+    name: faker.commerce.productName(),
+    logo: faker.image.abstract(156, 156),
+    game_id: gameId,
+  });
+  leagues.push(league);
+}
+console.log(`populating db with ${leagues.length} leagues `);
+
+leagues.forEach((league) => {
+  league.save((err) => {
+    if (err) {
+      console.log('error adding leagues to db');
+    } else {
+      console.log(`saved product ${league._id} in db`);
+    }
+  });
+});
+
+// clear out Product collection, then invoke product creator function
+db.League.deleteMany({}, (err) => {
+  if (err) {
+    console.log('error deleting Leagues');
+  } else {
+    console.log('deleted League data');
+    createLeagueData();
+  }
+});
+
+setTimeout(() => {
+  process.exit();
+}, 5000);
