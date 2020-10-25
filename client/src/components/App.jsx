@@ -4,17 +4,10 @@ import GameSection from './GameSection.jsx';
 
 
 const App = () => (
-  <div>
-    <div className='main-nav'>
-      <div className='buttons'>
-        <GameSection />
-        <div>Rocket League</div>
-        <div>OverWatch</div>
-        <div>League of Legands</div>
-        <div>Counter Strike Global Defense </div>
-      </div>
-    </div>
+  <div className='main-nav'>
+    <GameSection />
   </div>
 );
 
 export default App;
+
