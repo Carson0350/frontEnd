@@ -2,7 +2,7 @@ import React from  'react';
 import axios from 'axios';
 
 import { sampleGameData } from '../../dummyData'
-console.log(sampleGameData)
+
 
 class GameInfo extends React.Component {
   constructor(props) {
@@ -40,10 +40,13 @@ class GameInfo extends React.Component {
   render () {
     return (
       <div>
+        <div>{sampleGameData.game}</div>
+        {/* <div>{sampleGameData.number_of_teams}</div>
+        <div>{sampleGameData.start_year}</div>
         <div>Rocket League</div>
         <div>OverWatch</div>
         <div>League of Legands</div>
-        <div>Counter Strike Global Defense </div>
+        <div>Counter Strike Global Defense </div> */}
       </div>
     );
   };

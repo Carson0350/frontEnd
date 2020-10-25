@@ -2,6 +2,7 @@ import React from 'react';
 
 // import sampleGameData from '../../dummyData.jsx';
 import GameInfo from './GameInfo.jsx';
+console.log(GameInfo)
 
 
 const GameSection = () => {
