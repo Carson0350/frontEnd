@@ -9,6 +9,7 @@ const Schema = mongoose.Schema;
 
 const gameSchema = new Schema({
   _id: Schema.Types.ObjectId,
+  game_id: Number,
   game: String,
   logo: String,
   category: String,
@@ -53,7 +54,7 @@ const Team = mongoose.model('Team', teamSchema);
 const Player = mongoose.model('Player', playerSchema)
 const Score = mongoose.model('Score', scoreSchema)
 
-module.export = {
+module.exports = {
   Score,
   Player,
   Game,
