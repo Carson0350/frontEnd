@@ -5,7 +5,15 @@ const sampleGameData = {
   catigory: 'Car Soccer',
   number_of_teams: 15,
   start_year: 1993
-};
+}
+// {
+//   id: 2,
+//   game: 'League of Legands',
+//   logo: 'www.someImage.com',
+//   catigory: 'Big team Battle',
+//   number_of_teams: 15,
+//   start_year: 1903
+// };
 
 const sampleLeagueData = {
   id: 1,

@@ -2,6 +2,7 @@ import React from  'react';
 import axios from 'axios';
 
 import { sampleGameData } from '../../dummyData'
+import { sampleLeagueData } from '../../dummyData'
 
 
 class GameInfo extends React.Component {
@@ -41,6 +42,7 @@ class GameInfo extends React.Component {
     return (
       <div>
         <div>{sampleGameData.game}</div>
+        <div>{sampleLeagueData.name}</div>
         {/* <div>{sampleGameData.number_of_teams}</div>
         <div>{sampleGameData.start_year}</div>
         <div>Rocket League</div>

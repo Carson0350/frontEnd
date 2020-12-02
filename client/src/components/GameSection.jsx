@@ -2,10 +2,11 @@ import React from 'react';
 
 // import sampleGameData from '../../dummyData.jsx';
 import GameInfo from './GameInfo.jsx';
-console.log(GameInfo)
 
 
-const GameSection = () => {
+
+const GameSection = (props) => {
+  console.log('props from game section',  props)
   return (
     <div className='game-section-wrapper'>
     <div className='main-nav'>
@@ -16,5 +17,6 @@ const GameSection = () => {
   </div>
   )
 };
+
 
 export default GameSection;
