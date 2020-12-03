@@ -1,11 +1,11 @@
 import React from 'react';
 
-import GameSection from './GameSection.jsx';
+import GameItem from './GameListItem.jsx';
 
 
 const App = () => (
   <div className='main-nav'>
-    <GameSection />
+    helloo
   </div>
 );
 
