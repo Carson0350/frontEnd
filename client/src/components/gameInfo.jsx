@@ -16,6 +16,13 @@ class GameInfo extends React.Component {
     }
   };
 
+
+
+
+
+
+
+
   componentDidMount() {
     const gameId = sampleGameData;
     axios.get('/games', {
@@ -38,20 +45,19 @@ class GameInfo extends React.Component {
     console.log('gameInfo component mounted')
   }
 
+
+
+
+
+
   render () {
     return (
       <div>
-        <div>{sampleGameData.game}</div>
         <div>{sampleLeagueData.name}</div>
-        {/* <div>{sampleGameData.number_of_teams}</div>
-        <div>{sampleGameData.start_year}</div>
-        <div>Rocket League</div>
-        <div>OverWatch</div>
-        <div>League of Legands</div>
-        <div>Counter Strike Global Defense </div> */}
       </div>
     );
   };
 };
+
 
 export default GameInfo

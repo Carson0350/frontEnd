@@ -1,19 +1,19 @@
-const sampleGameData = {
+const sampleGameData = [{
   id: 1,
   game: 'Rocket League',
   logo: 'www.someImage.com',
   catigory: 'Car Soccer',
   number_of_teams: 15,
   start_year: 1993
-}
-// {
-//   id: 2,
-//   game: 'League of Legands',
-//   logo: 'www.someImage.com',
-//   catigory: 'Big team Battle',
-//   number_of_teams: 15,
-//   start_year: 1903
-// };
+},
+{
+  id: 2,
+  game: 'League of Legands',
+  logo: 'www.someImage.com',
+  catigory: 'Big team Battle',
+  number_of_teams: 15,
+  start_year: 1903
+}];
 
 const sampleLeagueData = {
   id: 1,
@@ -38,6 +38,8 @@ const samplePlayerData = {
 };
 
 const currentGameId = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+
+// module.exports = sampleGameData;
 
 
 export {
