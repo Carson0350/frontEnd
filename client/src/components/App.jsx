@@ -14,10 +14,30 @@ class App extends React.Component {
       games: []
     }
   }
+
+  componentDidMount() {
+    fetch('http://localhost:3000/api/gameList')
+    .then((response) => response.json())
+    .then((data) => {
+      console.log('dfkjsadk;lfj;lkdzjf;lksdjf', data)
+      this.setState({
+        games: data.game
+      })
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+    this.setState ({
+      games: gameData
+    })
+  }
+
+
   render () {
     return (
       <div className='main-nav'>
         helloo
+        <gameData games={this.state.games} />
       </div>
     )
   }
